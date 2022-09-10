@@ -1,0 +1,207 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+body{
+    width: 100%;
+    height:100%;
+    background-color:rgb(223, 222, 241);
+    position: absolute;
+    font-family:sans-serif;
+    background-image: url(../images/macbook-pro-iphone-cup-desk-7974.jpg);
+    background-size: cover;
+    /* filter: brightness(50%); */
+}
+ .top-heading{
+     margin-top:5%;
+     text-transform: capitalize;
+     text-align: center;
+     color:#ffff;
+ }
+
+.form-wrapper{
+    margin: 5% auto;
+    width:fit-content;
+    background-color:rgba(255, 255, 255, 0.767);
+    border-radius:2px;
+    padding:10px 10px;
+    display: block;
+
+}
+.form-wrapper .header{
+    /* border:1px solid red; */
+    width:100%;
+    margin-top:-10px;
+    margin-left: -1px;
+
+
+}.form-wrapper .header img{
+    position: relative;
+    width:65vh;
+
+}
+
+form h1{
+    text-transform: capitalize;
+    font-size:25px;
+    color:rgb(63, 228, 112);
+    text-align:center;
+    font-family:sans-serif;
+    padding: 10px 10px;
+    margin:20px auto;
+}
+form h2{
+    padding: 10px 10px;
+    margin:3px auto;
+}
+form{
+    display:block;
+    text-align:center;
+    /* border:1px solid red; */
+    padding:10px 10px;
+}
+
+
+form i#ermsg {
+    font-size: 16px;
+    color: #fe0202;
+    box-shadow: 0px 1px 3px #fe0202;
+    width: auto;
+    border: 1px solid #fe0202;
+    border-radius: 2px;
+    display: block;
+    padding: 0px 5px;
+    background-color: #e6e0e0;
+}
+
+form i#ermsg span{
+    background-color: #d42020;
+    padding:0px 5px;
+    float: right;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+  }
+
+  form i#ermsg span:hover{
+    background-color: #df0f0f;
+    margin-top: 1px;
+  }
+
+
+form .row{
+   display: block;
+   margin: 20px 20px;
+
+}
+form .row .input{
+    border-bottom:2px solid rgba(22, 22, 22, 0.623);
+    display: inline-block;
+    margin:5px 15px;
+}
+form h2{
+    font-size:18px;
+    font-weight:normal;
+    color:rgb(38, 23, 245);
+
+}
+
+form .row input{
+    border:none;
+    font-size: 17px;
+    color: rgba(20, 20, 20, 0.904);
+    padding:5px 5px;
+    line-height: 25px;
+    background: none ;
+}
+form .row label{
+    border:none;
+    font-size: 16px;
+    color: rgba(20, 20, 20, 0.904);
+    padding:5px 5px;
+    line-height: 25px;
+}
+form .row select{
+    border:none;
+    font-size: 17px;
+    background: none;
+    color: rgba(20, 20, 20, 0.904);
+    padding:5px -5px;
+    line-height: 20px;
+}
+
+form .login{
+    border-radius:2px;
+    padding:10px 15px;
+    border:none;
+    cursor: pointer;
+    margin-top: 10px ;
+    margin-right: -25rem ;
+    margin-bottom: 10px;
+    color:#ffff;
+    font-weight:bold;
+    font-size:16px;
+    text-transform:capitalize;
+    background-color:rgb(1, 177, 30);
+    animation: fadeOut 1s;
+}
+
+form .login:hover{
+    animation: fadeIn 1s;
+    background-color:rgb(22, 196, 36);
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0.5;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes fadeOut{
+    form{
+        opacity:1;
+    }
+    to{
+        opacity:0.7;
+    }
+}
+
+form .forget_pw{
+    display: block;
+    margin: 5px auto;
+    padding:10px 5px;
+}
+form .forget_pw a{
+    font-weight: bold;
+}
+
+.input a{
+    color: rgba(70, 70, 73, 0.815);
+    font-size:16px;
+    margin-top:-10px;
+    text-decoration: none;
+    font-weight:bold;
+}
+
+.api a:first-child{
+    color:#fff;
+    text-decoration:none;
+    font-size:16px;
+    text-align: center;
+    padding: 8px 5px;
+    margin: 10px auto;
+    border-radius:2px;
+    background-color:#2250b1;
+}
+.api a{
+    color:#fff;
+    text-decoration:none;
+    font-size:16px;
+    text-align: center;
+    padding: 8px 5px;
+    margin: 10px auto;
+    border-radius:2px;
+    background-color:rgba(255, 62, 48);
+}

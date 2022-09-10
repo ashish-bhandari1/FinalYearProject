@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/myWebView"
+        android:visibility="gone"
+        />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/swipeRefreshLayout"
+        android:background="#bfbfbf"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relativeLayout"
+            >
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:src="@drawable/no_wifi"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/noConnectionLogo"
+                android:layout_marginTop="180dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="320dp"
+                android:layout_marginHorizontal="30dp"
+                android:textAlignment="center"
+                android:text="Oops! No internet connection"
+
+                android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+                android:textColor="#000"
+                android:textSize="22dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="370dp"
+                android:layout_marginHorizontal="35dp"
+                android:textAlignment="center"
+
+                android:text="Please check your internet connection and try again"
+                android:textColor="#4E4E4E"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/btnNoConnection"
+                android:layout_height="50dp"
+                android:layout_width="150dp"
+                android:layout_marginTop="450dp"
+                android:layout_marginHorizontal="130dp"
+                android:background="@color/lightorange"
+                android:text="Retry"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

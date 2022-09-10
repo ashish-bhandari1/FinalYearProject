@@ -1,0 +1,213 @@
+*{
+    margin:0px;
+    padding:0px;
+    overflow: hidden;
+}
+
+
+body{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+  }
+body .form_wrapper{
+  background-color:#c4bfbf;
+  border-radius: 5px;
+    margin: 0;
+    padding: 10px 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: max-content;
+    text-align: center;
+    /* transform: translate(-50% ); */
+}
+form{
+    margin:5px 8px;
+    display:table;
+    /* border:1px solid #000; */
+    width: 90%;
+}
+form h1{
+    font: bold 25px Helvetica, Arial, Sans-Serif; 
+    letter-spacing:1px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    -webkit-transition: all 0.12s ease-out;
+    -moz-transition: all 0.12s ease-out;
+    -o-transition: all 0.12s ease-out;
+  text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+h1:hover {
+    position: relative; top: -3px; left: -3px; 
+    text-shadow: 1px 1px #fe4902, 2px 2px #fe4902, 3px 3px #fe4902, 4px 4px #fe4902, 5px 5px #fe4902, 6px 6px #fe4902;  
+}
+
+form i.errorMsg{
+  font-size: 16px;
+  color: #fe0202;
+  box-shadow: 0px 1px 3px #fe0202;
+  width: 100%;
+  border: 1px solid #fe0202;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: row;
+  padding: 0px 5px;
+  background-color: #e6e0e0;
+
+}
+  
+form i.errorMsg span{
+  background-color: #d42020;
+  padding:1px 5px;
+  margin-left: 10px;
+  float: right;
+  font-size: 16px;
+  cursor: pointer;
+  color: #fff;
+
+}
+form i.errorMsg span:hover{
+  background-color: #df0f0f;
+  margin-top: -3px;
+}
+
+
+form input{
+    padding:5px 2px;
+    margin: 8px 25px;
+    border-radius:2px; 
+    display:table-row;
+    line-height: 25px;
+    font-size: 17px;
+    border:1px solid #acadac;
+    color: #2c2c2c;
+}
+form label{
+  padding: 3px 2px;
+  color: #303030;
+  margin: 4px 10px;
+  font-weight: bold;
+}
+form select{
+  padding: 5px 8px;
+  max-height: 35px;
+}
+form button{
+    padding:5px 2px;
+    margin-top:25px;
+    margin-left:5px;
+    border-radius:5px; 
+    width:80%;
+    background-color:#585858;
+    color:#fff;
+    line-height:25px;
+    font-size:16px;
+    border: none;
+    font-weight:bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in;
+}
+
+form button:hover{
+    background-color:#4e3f3c;
+}
+form .links a span{
+        font-size:35px;
+        text-decoration: none;
+        color:#fe0202;
+
+    }
+form .links a:first-child{
+    color:#fe0202;
+    font-size:16px;
+    font-weight: normal;
+    float:none;
+    text-shadow:none;
+    text-transform:capitalize;
+    margin: 10px, 2px;
+}
+
+form .links a:first-child:hover{
+    text-shadow: 2px 2px 5px #fe0202;
+}
+form .links a{
+    float:right;
+    text-decoration: none;
+    text-transform:capitalize;
+    font-size: 17px;
+    font-weight:bold;
+}
+#blink {
+    -webkit-animation: 2s linear infinite condemned_blink_effect; // for Safari 4.0 - 8.0
+    animation: 2s linear infinite condemned_blink_effect;
+  }
+  @-webkit-keyframes condemned_blink_effect { 
+    0% {
+      visibility: hidden;
+    }
+    50% {
+      visibility: hidden;
+    }
+    100% {
+      visibility: visible;
+    }
+  }
+  @keyframes condemned_blink_effect {
+    0% {
+      visibility: hidden;
+    }
+    50% {
+      visibility: hidden;
+    }
+    100% {
+      visibility: visible;
+    }
+  }
+  body .help_Wrapper{
+      width:100%;
+      height: 100%;
+      display:none;
+      position: absolute;
+      text-align: right;
+      background-color:rgba(0, 0, 0, 0.329);
+  }
+  body .help{
+    display: inline-block;    
+    background-color: #fff;
+    border-radius: 5px;
+    height: auto;
+    padding: 15px 18px;
+    width:60vh;
+    margin-top: 10%;
+    margin-right: 10%;
+    text-align: left;
+    border-top-right-radius: 25%;
+  }
+  body .help span{
+    font-size: 35px;
+    color:#fe0202; 
+    cursor:pointer; 
+    font-weight:bold;
+  }
+    body .help a{
+      background-color:rgba(73, 45, 230, 0.884);
+      border-radius: 10px;
+      padding: 8px 8px;
+      margin: 10px 5px;
+      display:flex;
+      flex-direction:column;
+      color:#fff;
+      text-decoration:none;
+      font-size: 19px;
+
+      
+  }
+  body .help a:hover{
+    text-decoration:underline;
+    font-size: 20px;
+  }

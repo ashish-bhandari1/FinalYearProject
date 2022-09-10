@@ -1,0 +1,723 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color: rgb(226, 224, 243);
+  font-family: sans-serif;
+  overflow-x: hidden;
+  display: block;
+}
+body .navbar{
+  background-color:rgb(43, 42, 42) ;
+  height: 10vh;
+  display: block;
+  position: fixed;
+  z-index: 2;
+}
+
+body .navbar .navbar-brand{
+  text-align: left;
+  font-weight: 900;
+  display: flex;
+  color: #fff;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.navbar .fas{
+  font-size: 30px;
+  font-weight: 900;
+  color: #fff;
+  width: 30px;
+  margin-right: 20px;
+  position: relative;
+}
+
+/* data edit form display block start*/
+.editForm{
+  display: block; 
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  height: 100%;
+}
+/* data edit form display block end*/
+
+
+
+
+
+
+/* common add data form for all page ___________________________ START */
+.UploadFrom{
+  display: none;  /*by default */
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  height: 100%;
+  overflow: scroll;
+  background-color: rgba(0, 0, 0, 0.397);
+}
+
+.FormShow{
+  display: block;
+}
+
+
+.formWrapper{
+  margin: 15vh auto;
+  position: relative;
+  padding: 10px;
+  width: 55%;
+  display: block;
+  background-color: rgb(255, 255, 255);
+  border-radius: 2px;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* less margin for edit data form */
+
+.ediTformWrapper{
+  margin: 5vh auto;
+}
+
+/* less margin for edit data form end */
+
+.formWrapper::after{
+  clear: both;
+}
+
+.formWrapper h3{
+  position: absolute;
+  margin-bottom: 25px;
+  float: right;
+  width: 98%;
+}
+
+.formWrapper h3 span{
+  color: rgb(255, 0, 0);
+  font-size: 40px;
+  background-color: rgb(255, 255, 255);
+  padding: 0px 5px;
+  cursor: pointer;
+}
+
+.formWrapper h3 span:hover{
+  color: rgb(255, 0, 0);
+  font-size: 45px;
+  background-color: rgb(199, 218, 210);
+}
+
+
+.formWrapper h1{
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  font-family: sans-serif;
+  text-transform: capitalize;
+  margin: 5px;
+  background-color: rgb(131, 130, 130);
+  color: #fff;
+  font-weight: 500;
+}
+
+.formWrapper form{
+  padding: 5px;
+}
+
+.formWrapper form .inputWrapper{
+  margin: 30px 10px;
+  background-color: rgb(255, 255, 255);
+}
+.ediTformWrapper form  img{
+  width: auto;
+  max-height: 200px;
+  margin: 5px 0px;
+  border:1px solid #bfbfbf;
+}
+
+.formWrapper form .inputWrapper .input{
+  padding: 5px;
+  box-shadow: 1px 1px 3px rgb(108, 107, 112);
+  border-radius: 1px;
+  margin: 20px, 0px;
+}
+
+.formWrapper form .inputWrapper .input label{
+  text-transform: capitalize;
+  font-weight: 500;
+  color: rgb(51, 50, 50);
+  width: 100%;    
+  padding: 3px;
+ 
+
+}
+
+.formWrapper form .inputWrapper .input input{
+  padding:3px 5px;
+  border-style: solid;
+  border-left-color: rgb(24, 123, 180);
+  border-right: none;
+  border-top: none;    
+  border-bottom: none;
+  background: rgba(0, 0, 0, 0.116);
+  /* border-bottom: 1px solid rgb(155, 152, 152); */
+  width: 100%;
+}
+
+.formWrapper form .inputWrapper .input #fileInput{
+  padding-left: 0px;
+  background: none;
+  border: none;
+}
+form .button{
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+form .button button{
+  border: none;
+  background: rgb(13, 129, 182);
+  padding: 7px 14px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 17px;
+  border-radius: 2px;
+  color: #fff;
+  transition:background 0.5s;
+  text-align: right;
+}
+form button:hover{
+  background: rgb(0, 134, 0);
+}
+
+form .button a{
+  border: none;
+  background: rgb(29, 43, 228);
+  padding: 7px 14px;
+  margin: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 2px;
+  color: #fff;
+  transition:background 0.5s;
+  text-align: right;
+}
+
+
+
+
+.formWrapper form .radioWrapper{
+  margin: 10px;
+  
+}
+.formWrapper form .radioWrapper .input{
+  display: flex;
+  flex-direction: row;
+}
+.formWrapper form .radioWrapper .input input{
+  margin: 5px 15px;
+}
+/* common form for all page ___________________________ END */
+
+
+
+
+
+
+
+/* drop down menu----------------------------------------- start*/
+
+.row .menuActive{
+  display: none;
+}
+.row {
+  top: 10vh;
+  position: relative;
+  height: fit-content;
+} 
+/* drop down column  start*/
+.row .col-md-2  {
+  background: linear-gradient(to bottom, #616161 0%, #7d9e9c 100%);
+  padding: 5px;
+  border-radius: 2px;
+  height: fit-content;
+  scroll-behavior: smooth;
+}
+
+.row .col-md-2::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.row .col-md-2::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+.row .col-md-2::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+}
+
+.row h1{
+  padding: 3px;
+  margin:3px 15px;
+  font-size: 16px;
+  color: #fff;
+  width: 90%;
+  background-color: #4d4d4d;
+  border-radius: 1px;
+  text-transform: capitalize;
+}
+
+.row .col-md-2 ul{
+  padding: 5px;
+  margin:5px;
+  list-style: none;
+}
+.row .col-md-2 ul li{
+  padding: 6px 5px;
+  margin-top:10px;
+  cursor: pointer;
+}
+.row .col-md-2 ul li:first-child{
+  margin-top: 0px;
+}
+.row .col-md-2 ul li a:hover{
+  background-color: #7270ff;
+
+}
+
+.row .col-md-2 ul li a{
+  padding: 10px;
+  margin-top:10px;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  width: 100%;
+  position: relative;
+  text-transform: capitalize;
+  text-decoration: none;
+  line-height: 10px;
+}
+
+.row .col-md-2 ul li a i{
+  color: rgb(255, 255, 255);
+  margin: 5px;
+  font-size: 16px;
+
+}
+
+/* drop down menu--------------------------------------- end*/
+
+
+
+
+
+
+
+
+/* HOME PAGE  ______________________________ START */
+body .col-md-10 .total_user, body .col-md-10 .total_movie, body .col-md-10 .total_booking{
+  box-shadow: 1px 2px 3px #000;
+  margin: 10px;
+  padding: 20px 10px;
+  width: fit-content;
+  display: inline-block;
+}
+
+body .col-md-10 .total_user i, body .col-md-10 .total_movie i,  body .col-md-10 .total_booking i{
+  font-size: 70px;
+  text-align: center;
+  display: block;
+  color: rgb(255, 255, 255);
+}
+
+body .col-md-10 .total_user h4 , body .col-md-10 .total_movie h4 ,  body .col-md-10 .total_booking h4 {
+  text-transform: capitalize;
+  margin: 10px auto auto auto;
+  color: #202020;
+  font-size: 20px;
+}
+body .col-md-10 .total_user h4 span, body .col-md-10 .total_movie h4 span,  body .col-md-10 .total_booking h4 span{
+  text-shadow: 1px 2px 1px #1f1f1f;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+
+}
+
+body .col-md-10 .total_user{
+background-color: #41c1ca;
+}
+ body .col-md-10 .total_movie {
+  background-color: #dacc56;
+
+ }  
+ body .col-md-10 .total_booking {
+  background-color: #5cd34d;
+
+ }
+
+
+/* HOME PAGE  ______________________________ END */
+
+
+
+
+
+
+
+/* SCREENING PAGE  ______________________________ START */
+.row table th{
+  text-transform: capitalize;
+}
+.row .col-md-10{
+  padding: 5px 20px ;
+  overflow-x: auto;
+}
+
+.row .tableWrapper table{
+  margin-right: 10px;
+  widows: 90%;
+} 
+.row .table td img {
+  border: 1px solid #360b0b;
+  height: 150px;
+  max-width: 300px;
+  width: auto;
+  
+}
+
+/* buttoms aboove table */
+
+.row .buttoms{
+  padding: 10px;
+  text-align: right;
+}
+.row .buttoms a{
+  text-decoration: none;
+  font-size: 18px;
+  margin-right: 10px;
+  color: #000;
+  padding: 5px;
+}
+
+.row .buttoms a i{
+  margin: 5px ;
+}
+.row .buttoms a:first-child{
+  border-right: 2px solid;
+}
+.row .buttoms a:first-child i{
+  color: green;
+}
+
+.row .buttoms a{
+  text-decoration: none;
+  font-size: 16px;
+}
+.row   button.addData{
+  background-color: rgb(101, 105, 101);
+  border-radius: 2px;
+  display: block;
+  border: none;
+  padding:5px 8px;
+  text-decoration: none;
+  margin: 5px 2px;
+  width: fit-content;
+  color: #fff;
+  transition: background-color 0.5s;
+}
+.row  button.addData i{
+  padding: 5px;
+}
+
+.row  button.addData:hover{
+  background-color: rgb(29, 56, 37);
+}
+footer {
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:rgb(43, 42, 42) ;
+   color: purple;
+   text-align: center;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+
+/* SCREENING PAGE  ______________________________ END */
+
+
+
+
+
+
+
+/* THEATRE MANAGEMENT PAGE________________ START */
+.row .theatreWrapper{
+  margin: 10px 20px;
+  padding: 0px 10px;
+  border-radius: 2px;
+  display: inline-block;
+  width: 100%;
+
+}
+.row .tableWrapper #theatreimg{
+  height: 150px;
+  max-width: 600px;
+  width: 340px;
+  background-color: #bfbfbf; 
+}
+
+.row  h3{
+  text-transform: capitalize;
+  font-size: 25px;
+  font-weight: 700;
+  margin: 20px auto;
+
+}
+.row .tableWrapper{
+  padding: 5px;
+  border: 2px solid #dddddd;
+  box-shadow: 1px 1px 3px rgb(108, 107, 112);
+  width: fit-content;
+  display: block;
+  background-color: rgb(239, 238, 245);
+  margin-bottom: 15px;
+}
+
+/* error message  print ______________ START*/
+.row  i#ermsg{
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 1px 1px 2px #fe0202;
+  width: 100%;
+  border: 1px solid #fe0202;
+  border-radius: 2px;
+  display: block;
+  padding: 3px 5px;
+  background-color: #e6e0e0;
+  margin: 10px 3px;
+}
+ 
+.row  i.errorMsg span{
+  background-color: #d42020;
+  padding:6px 5px;
+  float: right;
+  font-size: 14px;
+  font-weight: bolder;
+  cursor: pointer;
+  margin-top: -5px;
+  color: #fff;
+}
+
+.row  i.errorMsg span:hover{
+  background-color: #df0f0f;
+  margin-top: -3px;
+}
+
+/* error message  print ______________ END*/
+
+
+.row .tableWrapper{
+  display: block;
+  float: left;
+  margin: 2px 10px;
+}
+
+
+.row table.theatreTable{
+  font-family: arial, sans-serif;
+}
+
+.row table.theatreTable th{
+  border: 1px solid rgb(251, 251, 252);
+  text-align: left;
+  padding: 8px;
+  background-color: #c8c8c8;
+}
+
+.row table.theatreTable td{
+  padding: 8px 20px;
+  margin: auto 30px;
+  text-align: left;
+  color: #000;
+  text-transform: capitalize;
+  border-bottom: 1px solid #b3aeca;
+}
+
+.row form#booking_form{
+  margin: 5% auto auto auto;
+  background-color: #999898;
+  color: #fff;
+  padding: 5px 10px;
+}
+.row form#booking_form select{
+  padding: 4px 5px;
+  background-color: #efefef;
+}
+.row form#booking_form button{
+  padding: 4px 5px;
+  color: #fff;
+  background-color: #757575;
+}
+.row form#booking_form button i{
+  margin: auto 3px;
+}
+
+
+.row   a.addData{
+  background-color: rgb(101, 105, 101);
+  border-radius: 2px;
+  display: block;
+  padding:5px 8px;
+  text-decoration: none;
+  margin: 5px 2px;
+  width: fit-content;
+  color: #fff;
+  transition: background-color 0.5s;
+}
+.row  a.addData i{
+  padding: 5px;
+}
+
+.row  a.addData:hover{
+  background-color: rgb(29, 56, 37);
+}
+/* THEATRE MANAGEMENT PAGE________________ END */
+
+
+
+
+
+
+/* SEAT MANAGEMENT PAGE ____________ START */
+.row .col-md-10 section#seat-select-wrap .seat-row {
+  display: flex;
+}
+
+
+.row .col-md-10 section#seat-select-wrap .screenSide{
+   border-top-left-radius:100% 100%;
+   border-top-right-radius:100% 100%;
+   margin: 10px 5px;
+   background-image: linear-gradient(rgb(252, 114, 46), rgb(248, 230, 68));
+  padding: 10px 20px;
+  max-width: 98vh;
+}
+
+.row .col-md-10 section#seat-select-wrap .screenSide h4{
+    color: #fff;
+    text-align: center;
+}
+
+.row .col-md-10 section#seat-select-wrap .seat-row button{
+  padding: 3px;
+  border-radius: 3px;
+  height: 30px;
+  min-width: 30px;
+  width: fit-content;
+  margin: 5px;
+  border: none;
+  font-size: 15px;
+}
+
+
+.row .col-md-10 section#seat-select-wrap .seat-row button.Normal:hover{
+  background-image: linear-gradient(to bottom right, rgb(0, 115, 149), rgb(94, 181, 207));
+  color: #fff;
+}
+
+  /* normal seat color */
+.row .col-md-10 section#seat-select-wrap .seat-row button.Normal{
+
+    background-color: rgb(4, 168, 218);
+  /* background-image: linear-gradient(to bottom right, rgb(4, 168, 218), rgb(120, 221, 251)); */
+}
+
+
+  /* Reserved seat color */
+  .row .col-md-10 section#seat-select-wrap .seat-row button.Reserved{
+
+    background-image: linear-gradient(to bottom right, rgb(218, 167, 0), rgb(238, 224, 164));
+  }
+
+  .row .col-md-10 section#seat-select-wrap .seat-row button.Reserved:hover{
+    color: #fff;
+    background-image: linear-gradient(to bottom right, rgb(204, 158, 8), rgb(204, 188, 114));
+  }
+    /* Booked seat color */
+  .row .col-md-10 section#seat-select-wrap .seat-row button.Booked{
+      color: #fff;
+      background-image: linear-gradient(to bottom right, rgb(255, 0, 0), rgb(245, 122, 122));
+  }
+
+  .row .col-md-10 section#seat-select-wrap .seat-row span{
+    margin: 5px 15px;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  
+  
+  .row .col-md-10 section#seat-select-wrap .seatInfo{
+    display: flex;
+    margin: 15px 5px;
+    border-top: 2px solid #5a5a5a;
+    padding: 5px;
+    max-width: 100vh;
+
+  }
+
+  .row .col-md-10 section#seat-select-wrap .seatInfo .reserved{
+    background :rgb(218, 167, 0);
+    height: 20px;
+    width: 20px;
+    margin: 3px 8px;
+  }
+
+  .row .col-md-10 section#seat-select-wrap .seatInfo .booked{
+    background :rgb(255, 0, 0);
+    height: 20px;
+    width: 20px;
+    margin: 3px 8px;
+  }
+
+  .row .col-md-10 section#seat-select-wrap .seatInfo .available{
+    background :rgb(4, 168, 218);
+    height: 20px;
+    width: 20px;
+    margin: 3px 8px;
+  }
+
+
+
+/* SEAT MANAGEMENT PAGE ____________ END */
+
+/* MOVIE MANAGEMENT PAGE ____________ start */
+
+
+/* MOVIE MANAGEMENT PAGE ____________ END */

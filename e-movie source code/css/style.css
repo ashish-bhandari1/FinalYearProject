@@ -1,0 +1,2156 @@
+*{
+    margin-top: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color:#fffdf9;
+    margin:0px;
+    padding: 0px;
+    overflow-x: hidden;
+    height: fit-content;
+    font-family: sans-serif;
+}
+.nav-head{
+    background-color: #ffffff;
+    text-align: left;
+    display: block;
+    vertical-align: top;
+}
+/* //top fixed nav start */
+header .fixed-top .TopNavLeft{
+    display: inline-block;
+    text-align: left;
+    min-width: 360px;
+    height: 100%;
+    color: #fff;
+    font-weight: bold;
+    background-color: rgb(22, 21, 21);
+    padding: 5px;
+}
+header .fixed-top .TopNavLeft a{
+    color: #fff;
+    padding: 5px;
+    font-size: 15px;
+    margin: 15px;
+}
+header .fixed-top .TopNavRight {
+    display: inline-block;
+    text-align: right;
+    min-width: 360px;
+    height: 100%;
+    width:auto;
+    margin-right: 3%;
+    float: right;
+    color: black;
+    margin-top: 1px;
+}
+.TopNavRight a .startSelling{
+    background-color: cadetblue;
+    font-size: 20px ;
+}
+header .fixed-top .TopNavRight a{
+    font-size: 15px;
+    margin-top: 3px;
+    margin: 10px;
+}
+header .fixed-top .TopNavRight .startSelling{
+    background-color: #1b1b1b ;
+    border-radius: 2px;
+    padding:3px;
+    margin-top : 3px;
+    color: #fff;
+    margin: 3px;
+}
+header .fixed-top .TopNavRight .startSelling:hover{
+    background-color: #bfbfbf;
+}
+header .fixed-top .TopNavRight a i{
+    color: #fff;
+    margin: 5px;
+}
+header .fixed-top .TopNavRight a{
+    background-color: #FFA500;
+    border-radius: 2px;
+    padding:9px 3px;
+    margin-top: 2px;
+    height: 35px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: background-color 0.5s;
+}
+header .fixed-top .TopNavRight a:hover{
+    background-color: rgb(255, 136, 0);
+    text-shadow: 1px 2px 3px #000;
+}
+header .fixed-top .TopNavRight .playstore{
+    font-size: 10px;
+    margin: 0px;
+    background-color: #bfbfbf;
+}
+header .fixed-top .TopNavRight .playstore:hover{
+    background-color: #bfbfbf;
+}
+header .fixed-top .TopNavRight .playstore img{
+    height: 38px;
+}
+header .fixed-top{
+    display: inline-block;
+    background-color: #bfbfbf;
+    height: 40px;
+}
+.TopNavRight .user{
+    height: 35px;
+    cursor:pointer;
+    transition: transform 0.4s ease-in;
+}
+/* main nav __________ start */
+.mainNav{
+    background-color: #fff;
+    height: 10vh;
+    display: block;
+    position: relative;
+    box-shadow: 1px 2px 4px rgb(114, 113, 113);
+    margin: 0px 3px;
+    border-radius: 2px;
+    margin-top: 6.5vh;
+}
+.logo{
+    display: inline-block;
+    margin: 0px;
+    overflow: auto;
+    width: 200px;
+    height: 10vh;
+    display: block;
+    margin-left:0px;
+    position: absolute;
+    overflow: hidden;
+   /* border: 1px solid #fff;
+    */
+}
+.logo img{
+    width: auto;
+    height: 9vh;
+}
+.mainNav .navbar{
+    margin: 0px;
+    overflow: hidden;
+    margin-left:10%;
+    display: inline-block;
+    align-items: right;
+   /* border: 1px solid #fff;
+    */
+   /* background-color: #1d1c1b;
+    */
+    border-radius:2px;
+}
+.mainNav ul{
+    list-style: none;
+    display: flex;
+    padding: 5px 5px;
+    text-align: right;
+    font-family: sans-serif;
+}
+.mainNav ul li{
+    margin:auto 5px;
+    background-color: #fff;
+   /* border-left:1px solid #ff9736;
+    */
+    border-radius: 1px;
+    transition: background-color 0.3s ease-in;
+}
+.mainNav ul li a{
+    font-size: 17px;
+    margin:0px 7px;
+    text-decoration: none;
+    color:#2f2f2f;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+   /* text-shadow: 1px 2px 3px #000;
+    */
+}
+.mainNav ul li a:hover{
+    border-bottom: 2px solid #ff7a0d;
+    text-shadow: 1px 1px 2px rgb(175, 174, 174);
+    border-radius: 2px;
+}
+.mainNav ul li:hover{
+    background-color: #bfbfbf;
+}
+.mainNav .icon div{
+    background-color: rgb(24, 24, 24);
+    width: 30px;
+    height: 5px;
+    padding:1.5px 10px;
+    margin: 3px;
+    border-radius: 2px;
+    transition: transform 0.2s ease-in;
+}
+.mainNav .icon{
+    cursor: pointer;
+    display: none;
+    margin: 20px 10px;
+}
+/* search form */
+.mainNav .search{
+    background-color: #e1e1e2;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px #bfbfbf;
+    display: inline-block;
+    padding:2px 6px;
+    margin: 5px;
+    margin-bottom:25px;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+}
+.mainNav .search input{
+    border:none;
+    height:30px;
+    background-color: #e1e1e2;
+    width: 30vh;
+    line-height: 20px;
+    font-size: 18px;
+    color:rgba(17, 16, 16, 0.856);
+    border-right: 1px solid #b1aaaa;
+}
+.mainNav .search button{
+    border: none;
+    background: none;
+    font-size: 18px;
+    color:#5a5e5b;
+}
+@media only screen and (max-width:1250px){
+    header .navbar{
+        margin-left:1%;
+   }
+    .nav-head .search input{
+        font-size: 17px;
+   }
+}
+@media only screen and (max-width:1100px){
+    header .fixed-top .TopNavLeft{
+        min-width: 350px;
+        padding: 5px;
+   }
+    header .fixed-top .TopNavLeft a{
+        padding: 5px;
+        font-size: 14px;
+        margin: 14px;
+   }
+    header .fixed-top .TopNavRight {
+        min-width: 350px;
+        margin-right: 3%;
+   }
+    .TopNavRight a .startSelling{
+        font-size: 20px ;
+   }
+    header .fixed-top .TopNavRight a{
+        font-size: 15px;
+        margin-top: 3px;
+        margin: 8px;
+   }
+    header .fixed-top .TopNavRight .startSelling{
+        margin-top : 3px;
+        margin: 3px;
+   }
+    header .fixed-top .TopNavRight a i{
+        margin: 4px;
+   }
+    header .fixed-top .TopNavRight a{
+        padding:7px 3px;
+        margin-top: 1px;
+        height: 30px;
+        font-size: 15px;
+   }
+    header .fixed-top .TopNavRight .playstore{
+        margin: 0px;
+   }
+    header .fixed-top .TopNavRight .playstore img{
+        height: 30px;
+   }
+    header .fixed-top{
+        height: 35px;
+   }
+    .TopNavRight .user{
+        height: 30px;
+   }
+    .mainNav .navbar{
+        margin-left:1%;
+   }
+    .mainNav .search{
+        padding:2px 6px;
+        margin: 0px auto;
+        margin-top:10px;
+        height: 6vh;
+   }
+    .mainNav .search input{
+        width: 25vh;
+        font-size: 16px;
+   }
+    .mainNav{
+        height: 10vh;
+        display: flex;
+        flex-direction:row;
+        z-index: 1;
+        margin-top: 6.5vh;
+   }
+    .logo{
+        margin: 0px 5px;
+        width: 200px;
+        height: 10vh;
+        margin-left:0px;
+   }
+    .logo img{
+        width: auto;
+        height: 9vh;
+   }
+    .mainNav .navbar{
+        overflow: hidden;
+        margin-left:12%;
+   }
+    .mainNav ul{
+        padding: 5px 4px;
+   }
+    .mainNav ul li{
+        margin:auto 4px;
+   }
+    .mainNav ul li a{
+        font-size: 16px;
+        margin:0px 6px;
+   }
+    .galleryContainer{
+        height: 550px;
+   }
+}
+@media screen and (max-width:980px){
+    header .fixed-top .TopNavLeft{
+        min-width: 250px;
+        padding: 4px;
+   }
+    header .fixed-top .TopNavLeft a{
+        padding: 5px;
+        font-size: 14px;
+        margin: 10px;
+   }
+    header .fixed-top .TopNavRight {
+        min-width: 300px;
+        margin-right: 2%;
+   }
+    .TopNavRight a .startSelling{
+        font-size: 20px ;
+   }
+    header .fixed-top .TopNavRight a{
+        font-size: 15px;
+        margin: 4px 8px;
+   }
+    header .fixed-top .TopNavRight .startSelling{
+        margin-top : 5px 3px;
+        margin: 3px;
+   }
+    header .fixed-top .TopNavRight a i{
+        margin: 4px;
+   }
+    header .fixed-top .TopNavRight a{
+        padding:6px 3px;
+        margin-top: 2px;
+        height: 30px;
+        font-size: 15px;
+   }
+    header .fixed-top .TopNavRight .playstore{
+        margin: 0px;
+   }
+    header .fixed-top .TopNavRight .playstore img{
+        height: 25px;
+   }
+    .TopNavRight .user{
+        height: 26px;
+   }
+    .mainNav .navbar{
+        margin-left:1%;
+   }
+    .mainNav .search{
+        padding:2px 6px;
+        margin: 0px auto;
+        margin-top:8px;
+        height: 5vh;
+   }
+    .mainNav .search input{
+        width: 20vh;
+        font-size: 16px;
+   }
+    .mainNav{
+        height: 9vh;
+   }
+    .logo{
+        margin: 5px 5px;
+        width: 150px;
+        height: 8vh;
+        margin-left:0px;
+   }
+    .logo img{
+        width: auto;
+        height: 8vh;
+   }
+    .mainNav .navbar{
+        overflow: hidden;
+        margin-left:11%;
+   }
+    .mainNav ul{
+        padding: 5px 3px;
+   }
+    .mainNav ul li{
+        margin:auto 4px;
+   }
+    .mainNav ul li a{
+        font-size: 16px;
+        margin:0px 5px;
+   }
+    .galleryContainer{
+        height: 500px;
+   }
+    .galleryContainer .slideShowContainer{
+        height: 90%;
+   }
+    .galleryContainer .slideShowContainer #playPause{
+        width: 28px;
+        height: 28px;
+   }
+    .galleryContainer .slideShowContainer .leftArrow,.galleryContainer .slideShowContainer .rightArrow{
+        width: 40px;
+        height: 62px;
+   }
+    .galleryContainer #dotsContainer .dots{
+        width: 10px;
+        height: 10px;
+   }
+}
+@media screen and (max-width:760px){
+    header .fixed-top{
+        height: 30px;
+   }
+    header .fixed-top .TopNavLeft{
+        display: none;
+   }
+    header .fixed-top .TopNavRight {
+        min-width: 200px;
+        margin-left: 2%;
+        text-align: left;
+        float: left;
+   }
+    header .fixed-top .TopNavRight .startSelling{
+        margin-top : 5px 3px;
+        margin: 3px;
+   }
+    header .fixed-top .TopNavRight a i{
+        margin: 4px;
+   }
+    header .fixed-top .TopNavRight a{
+        padding:6px 3px;
+        margin-top: 2px;
+        font-size: 15px;
+   }
+    header .fixed-top .TopNavRight .playstore{
+        margin: 0px;
+   }
+    header .fixed-top .TopNavRight .playstore img{
+        height: 25px;
+   }
+    .TopNavRight .user{
+        height: 26px;
+   }
+    header .fixed-top .TopNavRight .playstore img{
+        height: 25px;
+   }
+    .TopNavRight .user{
+        height: 26px;
+   }
+    .mainNav{
+        margin-top: 5.5vh;
+   }
+    .mainNav .search{
+        padding:2px 6px;
+        margin: 0px auto;
+        margin-top:10px;
+   }
+    .mainNav .search input{
+        width: 20vh;
+        font-size: 16px;
+   }
+    .logo{
+        margin: 5px 5px;
+        width: 120px;
+        height: 8vh;
+   }
+    .logo img{
+        width: auto;
+        height: 8vh;
+   }
+    .mainNav .icon{
+        display: inline-block;
+        margin: 15px 10px;
+   }
+    .mainNav{
+        text-align:right;
+   }
+    #menu{
+        margin-left: 5px;
+   }
+    .mainNav .navbar{
+        position: absolute;
+        right: 0px;
+        height: auto;
+        display: block;
+        top:11vh;
+        width:50%;
+        background-color: rgba(0, 0, 0, 0.589);
+        transform: translateX(100%);
+        overflow-x: hidden;
+        z-index: 1;
+       /*block other display and stay top */
+        transition: transform 0.4s ease-in;
+   }
+    .mainNav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+   }
+    .mainNav ul li{
+        margin:10px 15px;
+        padding:10px 15px;
+        border:none;
+        background-color: rgba(0, 0, 0, 0);
+   }
+    .mainNav ul li:hover{
+        background-color: rgba(0, 0, 0, 0.664);
+        border-radius: 3px;
+   }
+    .mainNav ul li a{
+        font-weight: bold;
+        color: #fff;
+   }
+    .mainNav ul li a:hover{
+        text-decoration: none;
+   }
+}
+@media screen and (max-width:300px){
+    header .fixed-top .TopNavRight .startSelling{
+        display: none;
+   }
+}
+@media screen and (max-width:500px){
+    header .fixed-top .TopNavRight .startSelling{
+        margin : 5px 2px;
+   }
+    header .fixed-top .TopNavRight a{
+        padding:6px 3px;
+        margin-top: 2px;
+        height: 25px;
+        font-size: 14px;
+   }
+    header .fixed-top .TopNavRight .playstore{
+        margin: 0px;
+   }
+    header .fixed-top .TopNavRight .playstore img{
+        height: 25px;
+   }
+    .TopNavRight .user{
+        height: 25px;
+   }
+    header .fixed-top .TopNavRight .playstore img{
+        height: 25px;
+   }
+    .TopNavRight .user{
+        height: 26px;
+   }
+    .mainNav .search{
+        padding:2px 5px;
+        margin: 0px auto;
+        margin-top:10px;
+        height: 5vh;
+        z-index: 1;
+   }
+    .mainNav .search input{
+        width: 18vh;
+        font-size: 14px;
+   }
+    .mainNav .search button{
+        font-size: 14px;
+   }
+    .logo{
+        margin: 5px 3px;
+        width: 90px;
+        height: 7vh;
+   }
+    .logo img{
+        width: auto;
+        height: 6vh;
+   }
+    header .fixed-top .TopNavRight {
+        margin-right: 2%;
+   }
+    header .fixed-top .TopNavRight a{
+        font-size: 15px;
+        margin: 4px 5px;
+   }
+    header .fixed-top .TopNavRight a i{
+        margin: 4px;
+   }
+    header .fixed-top .TopNavRight a{
+        padding:5px 3px;
+        margin-top: 2px;
+        height: 30px;
+        font-size: 15px;
+   }
+    header .fixed-top .TopNavRight .playstore{
+        margin: 0px;
+   }
+    header .fixed-top .TopNavRight .playstore img{
+        height: 24px;
+   }
+    .TopNavRight .user{
+        height: 24px;
+   }
+    .mainNav .icon{
+        display: inline-block;
+        margin: 15px 10px;
+   }
+    .mainNav{
+        height: 8vh;
+   }
+    .logo{
+        height:8vh;
+   }
+    #menu{
+        margin-left: 5px;
+   }
+    .mainNav .icon div{
+        width: 27px;
+        height: 4px;
+        padding:1.5px 5px;
+        margin: 3px;
+   }
+    .mainNav .navbar{
+        top:8vh;
+        width:50%;
+   }
+    .mainNav ul li{
+        margin:5px 5px;
+        padding:10px 5px;
+   }
+    .mainNav ul li a{
+        font-weight: bold;
+        font-size: 12px;
+   }
+}
+.mainNav .navactive{
+    transform: translateX(0%);
+}
+.mainNav .toggle .line1{
+    transform: rotate(45deg) translate(6px, 6px);
+}
+.mainNav .toggle .line2{
+    display: none;
+}
+.mainNav .toggle .line3{
+    transform: rotate(-45deg) translate(-0px, 0px);
+}
+/* rotating user icon */
+.rotate_user{
+    transform:rotate3d(0, 1, 0, 180deg);
+}
+/* navigation _______________________ end_*/
+/* city form ___________________ START*/
+.city-wrapper{
+    width:100%;
+    height: 100%;
+    display:block;
+   /*hiding by default */
+    position: fixed;
+    text-align: right;
+    z-index: 2;
+    top: 6vh;
+    text-align: center;
+    background-color:rgba(27, 26, 26, 0.815);
+}
+.city-wrapper form{
+    margin: 10% auto;
+}
+.city-wrapper form h2{
+    color:#fff;
+    width: 100%;
+    position: relative;
+    font-size: 35px;
+    margin: 10px auto;
+    text-shadow: 1px 1px rgb(255, 72, 0);
+    text-transform: capitalize;
+}
+.city-wrapper form button{
+    padding: 20px 10px;
+    border: none;
+    border-radius: 50%;
+    margin: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    transition: transform .5s ease;
+    background: -webkit-linear-gradient(rgb(255, 255, 255), rgba(224, 140, 15, 0.562));
+}
+.city-wrapper form button::first-letter{
+    text-transform: uppercase;
+    font-size: 2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 5px;
+    font-weight: normal;
+}
+.city-wrapper form button:hover{
+    transform: scale(1.10);
+    background: -webkit-linear-gradient rgba(224, 140, 15, 0.637),(rgb(255, 255, 255));
+}
+/* city form ___________________ END*/
+/* login form ___________________ START*/
+.loginForm{
+    width:100%;
+    height: 100%;
+    display:none;
+   /*hiding by default */
+    position: fixed;
+    text-align: right;
+    z-index: 2;
+    top: 5vh;
+    background-color:rgba(0, 0, 0, 0.63);
+}
+.formWrapper{
+   /* border:1px solid #f07109;
+    */
+    display: inline-block;
+    margin:2px 5px;
+    z-index: 2;
+    animation: fadeIn 2s;
+}
+/* keyframe for fade in and fade out__________start */
+@keyframes fadeIn{
+    from{
+        opacity:0;
+   }
+    to{
+        opacity: 1;
+   }
+}
+/* @keyframes fadeOut{
+    form{
+        opacity:1;
+   }
+    to{
+        opacity:0;
+   }
+}
+*/
+/* keyframe for fade in and fade out__________ end */
+.loginForm form{
+    margin:30px 10px;
+    padding: 10px 5px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 5px;
+    background-color:rgb(255, 255, 255);
+}
+#form_wrapper:before{
+   /* creating pointer on border */
+    content:' ';
+    width: 0px;
+    height: 0px;
+    border-top:10px solid transparent;
+    border-bottom: 40px solid rgb(255, 255, 255);
+    border-left:20px solid transparent;
+    border-right:20px solid transparent;
+    position: absolute;
+    top:-2%;
+    right:14%;
+}
+form h1.formHeading{
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    -webkit-transition: all 0.12s ease-out;
+    -moz-transition: all 0.12s ease-out;
+    -o-transition: all 0.12s ease-out;
+    margin-bottom: 25px;
+}
+form h1.settingHeading{
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 10px 5px;
+    -webkit-transition: all 0.12s ease-out;
+    -moz-transition: all 0.12s ease-out;
+    -o-transition: all 0.12s ease-out;
+    margin-bottom: 25px;
+}
+form h1:hover {
+    position: relative;
+    top: -2px;
+    left: -2px;
+    text-shadow: 1px 1px #fe4902, 2px 2px #fe4902, 3px 3px #fe4902, 4px 4px #fe4902, 5px 5px #fe4902, 6px 6px #fe4902;
+}
+.loginForm form input{
+    padding:5px 2px;
+    margin: 8px 25px;
+    display:table-row;
+    border:none;
+    line-height: 20px;
+    font-size: 15px;
+    border-bottom:1.5px solid#00000094;
+}
+.loginForm form .button a{
+    padding:5px 15px;
+    margin:20px 8px;
+    border-radius:5px;
+    width:100%;
+    position: relative;
+    background-color:#585858;
+    color:#fff;
+    line-height:25px;
+    font-size:16px;
+    cursor: pointer;
+    text-shadow: 1px -1px#000;
+    transition: background-color 0.5s;
+}
+.loginForm form .button a:hover{
+    background-color:#221f1e;
+    text-shadow: 1px 2px 3px #000;
+}
+.loginForm form .button button{
+    padding:5px 15px;
+    margin:20px 8px;
+    border:none;
+    border-radius:5px;
+    width:auto;
+    position: relative;
+    background-color:#585858;
+    color:#fff;
+    line-height:25px;
+    font-size:16px;
+    cursor: pointer;
+    text-shadow: 1px -1px#000;
+    transition: background-color 0.5s;
+}
+.loginForm form button:hover{
+    background-color:#221f1e;
+    text-shadow: 1px 2px 3px #000;
+}
+.loginForm form .settingBtn a{
+    color: #252525;
+    text-align: center;
+    border-radius: 2px;
+    border: 1px solid rgb(0, 119, 119);
+    padding: 5px 10px;
+    text-decoration: none;
+    background-color: rgb(154, 197, 197);
+    margin: 15px 10px;
+}
+.loginForm form .settingBtn button{
+    padding:5px 15px;
+    margin:20px 8px;
+    border:none;
+    border-radius:5px;
+    width:auto;
+    position: relative;
+    background-color:#329425;
+    color:#fff;
+    line-height:25px;
+    font-size:16px;
+    cursor: pointer;
+    text-shadow: 1px -1px#000;
+    transition: background-color 0.5s;
+}
+.loginForm form .settingBtn button:hover{
+    background-color:#226619;
+    text-shadow: 1px 2px 3px #000;
+}
+.loginForm form a.forget_pw:hover{
+    text-shadow: 1px 2px 3px #fe0202;
+}
+.loginForm form a.forget_pw{
+    color:#fe0202;
+    font-size:13px;
+    margin:0px 5px;
+    float:none;
+    text-shadow:none;
+    text-transform:capitalize;
+    text-decoration: underline;
+}
+.loginForm form .links-wrapper div{
+    display: inline;
+}
+.loginForm form .links-wrapper div.links{
+    display: inline-block;
+}
+.loginForm form .links-wrapper div.links a{
+    display: flex;
+    flex-direction: column;
+}
+.loginForm form .api{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    font-size:14px;
+}
+.loginForm form .api a:first-child{
+    color:#fff;
+    text-decoration:none;
+    text-align: center;
+    padding: 2px 5px;
+    margin: 3px auto;
+    border-radius:2px;
+    background-color:#2250b1;
+}
+.loginForm form .api a{
+    color:#fff;
+    text-decoration:none;
+    text-align: center;
+    padding: 2px 5px;
+    margin: 3px auto;
+    border-radius:2px;
+    background-color:rgba(212, 45, 16, 0.911);
+}
+/* Top header _____________END */
+/* Top banner _____________start */
+/* Slideshow container */
+/* Fading animation */
+.FADE {
+   /* class name is written in block letter due to bootstrap issue */
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes FADE{
+    from{
+        opacity: .4;
+   }
+    to{
+        opacity: 1;
+   }
+}
+@-webkit-keyframes FADE{
+   /* for safari */
+    from{
+        opacity: .4;
+   }
+    to{
+        opacity: 1;
+   }
+}
+.galleryContainer{
+    width: 100%;
+    height: 600px;
+    margin: auto;
+    user-select: none;
+    box-sizing: border-box;
+}
+.galleryContainer .slideShowContainer{
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+    background-color: gainsboro;
+    position: relative;
+}
+.galleryContainer .slideShowContainer #playPause{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    background-image: url(../images/playPause.png);
+    background-repeat: no-repeat;
+    z-index: 5;
+    background-size: cover;
+    margin: 5px;
+    cursor: pointer;
+}
+.galleryContainer .slideShowContainer #playPause:hover{
+    opacity: .7;
+}
+.galleryContainer .slideShowContainer .imageHolder{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+}
+.galleryContainer .slideShowContainer .imageHolder img{
+    width: 100%;
+    height: 100%;
+}
+.galleryContainer .slideShowContainer .imageHolder .captionText{
+    display: none;
+}
+.galleryContainer .slideShowContainer .leftArrow,.galleryContainer .slideShowContainer .rightArrow{
+    width: 50px;
+    background: #0000006b;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    transition: background 0.5s;
+    height: 72px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.galleryContainer .slideShowContainer .rightArrow{
+    left: auto;
+    right: 0;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.galleryContainer .slideShowContainer .leftArrow:hover,.galleryContainer .slideShowContainer .rightArrow:hover{
+    background: #000000a9 ;
+    cursor: pointer;
+}
+.galleryContainer .slideShowContainer .leftArrow, .galleryContainer .slideShowContainer .rightArrow{
+    display: none;
+}
+.galleryContainer .slideShowContainer:hover .leftArrow, .galleryContainer .slideShowContainer:hover .rightArrow{
+    display: block;
+}
+.galleryContainer .arrow{
+    display: inline-block;
+    border: 3px solid white;
+    width: 10px;
+    height: 10px;
+    border-left: none;
+    border-bottom: none;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.galleryContainer .arrow.arrowLeft{
+    transform: rotateZ(-135deg);
+}
+.galleryContainer .arrow.arrowRight{
+    transform: rotateZ(45deg);
+}
+.galleryContainer .slideShowContainer>.captionTextHolder{
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    background: #00000047;
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+}
+.galleryContainer .slideShowContainer>.captionTextHolder>.captionText{
+    margin: 0;
+}
+.galleryContainer #dotsContainer{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+.galleryContainer #dotsContainer .dots{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-left: 5px;
+    background-color: #bbb;
+    cursor: pointer;
+    transition:background-color 0.5s;
+}
+.galleryContainer #dotsContainer .dots:first-child{
+    margin-left: 0;
+}
+.galleryContainer #dotsContainer .dots:hover,.galleryContainer #dotsContainer .dots.active{
+    background-color: #717171;
+    ;
+}
+.galleryContainer .moveLeftCurrentSlide{
+    animation-name: moveLeftCurrent;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+}
+.galleryContainer .moveLeftNextSlide{
+    animation-name: moveLeftNext;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+}
+@keyframes moveLeftCurrent {
+    from {
+        margin-left: 0;
+        opacity: 1;
+   }
+    to {
+        margin-left: -100%;
+        opacity: 1;
+   }
+}
+@keyframes moveLeftNext {
+    from {
+        margin-left: 100%;
+        opacity: 1;
+   }
+    to {
+        margin-left: 0%;
+        opacity: 1;
+   }
+}
+.galleryContainer .moveRightCurrentSlide{
+    animation-name: moveRightCurrent;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+}
+.galleryContainer .moveRightPrevSlide{
+    animation-name: moveRightPrev;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+}
+@keyframes moveRightCurrent {
+    from {
+        margin-left: 0;
+        opacity: 1;
+   }
+    to {
+        margin-left: 100%;
+        opacity: 1;
+   }
+}
+@keyframes moveRightPrev {
+    from {
+        margin-left: -100%;
+        opacity: 1;
+   }
+    to {
+        margin-left: 0%;
+        opacity: 1;
+   }
+}
+.slideTextFromBottom {
+    animation-name: slideTextFromBottom;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-out;
+}
+@keyframes slideTextFromBottom {
+    from {
+        opacity: 0;
+        margin-top: 100px 
+   }
+    to {
+        opacity: 1;
+        margin-top: 0px;
+   }
+}
+.slideTextFromTop {
+    animation-name: slideTextFromTop;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-out;
+}
+@keyframes slideTextFromTop {
+    from {
+        opacity: 0;
+        margin-top: -100px 
+   }
+    to {
+        opacity: 1;
+        margin-top: 0px;
+   }
+}
+/* Top banner _____________ END */
+/* Second nav _____________ START */
+.swiper-container {
+}
+.swiper-container .swiper-wrapper{
+}
+.swiper-container .swiper-wrapper .swiper-slide{
+}
+.swiper-container .swiper-wrapper .second-nav{
+    background-color: #bfbfbf;
+    padding: 4px 5px;
+    display: block;
+}
+.swiper-container .swiper-wrapper .second-nav .second-navcontent{
+    display: inline-block;
+    width: fit-content;
+}
+.swiper-container .swiper-wrapper .second-nav .hall-dropdown{
+    padding: 4px 5px;
+    display: inline-block;
+    border-radius: 2px;
+}
+.swiper-container .swiper-wrapper .hall-dropdown label{
+    color: rgb(27, 27, 27);
+    text-transform: capitalize;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.swiper-container .swiper-wrapper .hall-dropdown select{
+    margin:0px 7px;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #ff7a0d;
+    padding: 8px 2px;
+}
+.swiper-container .swiper-wrapper .hall-dropdown button{
+    margin:0px 7px;
+    letter-spacing: 2px;
+    padding: 6px 10px;
+    border: none;
+    background-color: #2e2e2e;
+    border-radius: 2px;
+    color: #fff;
+    transition: background-color 0.3s ease-in;
+}
+.swiper-container .swiper-wrapper .hall-dropdown button:hover{
+    background-color: #000000;
+}
+.swiper-container .swiper-wrapper ul{
+}
+.swiper-container .swiper-wrapper ul li{
+   /* margin:7px 3px;
+    */
+    background-color: rgb(22, 22, 22);
+    border-radius: 2px;
+    padding: 3px 0px;
+}
+.swiper-container .swiper-wrapper ul li a{
+    margin:0px 7px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease-in;
+   /* text-shadow: 1px 2px 3px #000;
+    */
+}
+.swiper-container .swiper-wrapper ul li a:hover{
+    border-bottom: 2px solid #ff7a0d;
+    text-shadow: 1px 1px 2px rgb(175, 174, 174);
+    background-color: #dad8d8;
+    color: rgb(20, 20, 20);
+}
+.swiper-container .swiper-wrapper ul li a.active{
+    border-bottom: 2px solid #ff7a0d;
+    color: rgb(20, 20, 20);
+}
+/* Second nav _____________ END */
+/* THEATRE _____________ START */
+.designBody{
+    height: fit-content;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    margin: 1px auto;
+    text-align: center;
+}
+.theatre-wrapper{
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+}
+.designBody h2{
+    text-align: center;
+    letter-spacing: 2vh;
+    margin: 15px auto;
+    font-size: 52px;
+    background: -webkit-linear-gradient(rgb(143, 147, 149), rgb(0, 0, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.designBody .theatre{
+    width: fit-content;
+    float: left;
+    text-align: center;
+    margin: 10px 20px;
+}
+.designBody .theatre .contain {
+    position: relative;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    width: 250px;
+    background-color: #737b7e;
+    min-height: 150px;
+}
+.designBody .theatre .contain img{
+    width: 250px;
+    height: 150px;
+    transition: transform 0.5s ease-in;
+}
+.designBody .theatre .contain img:hover{
+    transform: scale(1.2);
+}
+.designBody .theatre .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: 500;
+    padding: 8px 10px;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.733);
+    border-radius: 1px;
+    letter-spacing: 1px;
+    transition: background-color 0.5s;
+}
+.designBody .theatre .centered:hover {
+    background-color: rgb(17, 16, 16);
+}
+.designBody .link h4{
+    letter-spacing: 1px;
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(124, 124, 124),rgba(255,0,0,0));
+}
+.designBody .link{
+    display: table;
+    text-align: center;
+    border: 1px solid rgb(180, 179, 179);
+    width: 100%;
+    border-top: none;
+}
+.designBody .theatre a{
+    text-decoration: none;
+    color: #242221;
+    display: table-row;
+    padding: 3px;
+}
+.designBody .theatre a i{
+    padding: 3px 5px;
+}
+.designBody .link a i.fa-phone{
+    transform: rotate(180deg);
+    color: rgb(98, 104, 105);
+}
+/* THEATRE _____________ END */
+/* movie trailor colse by default */
+/* movie card START*/
+.movieWrapper{
+    padding: 5px;
+    width: 100%;
+    height: fit-content;
+    display: block;
+    box-shadow: 0px 0px 3px 1px #9980d878;
+}
+.movieWrapper .cardWrapper{
+    margin: 20px;
+    display: inline-block;
+}
+.movieWrapper .cardWrapper #split{
+    height: fit-content;
+    width: 100%;
+    float: left;
+    margin: 10px;
+}
+.movieWrapper .card {
+    height: fit-content;
+    width: 300px;
+    float: left;
+    margin: 10px;
+    color: #414141;
+    overflow: hidden;
+}
+.movieWrapper .card p {
+    margin: 0px;
+    font-style: italic;
+    border-radius: 2px;
+}
+.movieWrapper .card p.view-more{
+   /* background: linear-gradient(to right, red, yellow);
+    */
+    background-image: linear-gradient(to right, rgb(255, 94, 0),rgba(255,0,0,0));
+    margin: 5px auto auto auto;
+    padding: 3px 5px;
+    color: #fff;
+    cursor: pointer;
+}
+.movieWrapper .card p span{
+    font-weight: bold;
+    font-style: normal;
+}
+.movieWrapper .card span.checked{
+    color: orange;
+}
+.movieWrapper .card img{
+    max-height: 280px;
+    overflow: hidden;
+}
+.flip-card {
+    width: 300px;
+    height: 280px;
+    overflow: hidden;
+    perspective: 1000px;
+}
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+}
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.flip-card-front {
+    background-color: rgb(230, 230, 230);
+    color: black;
+}
+.flip-card-back {
+    background-color: rgb(230, 230, 230);
+    color: white;
+    transform: rotateY(180deg);
+    text-align: center;
+}
+.flip-card-back h3 {
+    color: rgb(78, 78, 78);
+    border-bottom: 1.5px solid #575757;
+    border-bottom-style: dashed;
+}
+.flip-card-back div {
+    display: block;
+    text-align: center;
+}
+.flip-card-back div p{
+    color: rgb(78, 78, 78);
+    border: 2px solid rgb(95, 95, 95);
+    padding: 5px 5px;
+    width: fit-content;
+    display: inline-block;
+    margin: 5px 0px;
+}
+.movieWrapper .card .trailer-frame{
+    display: none;
+}
+.watchTrailerOpen{
+    display: block;
+}
+.movieWrapper .card a#book-now{
+    background-color: #ff8800;
+    border:1px solid #ff8800;
+    color: #fff;
+}
+.movieWrapper .card a#book-now:hover{
+    background-color: #91202036;
+    transition: background-color 0.5s;
+    color:#3a3a3a;
+}
+.movieWrapper .card a.btn-primary{
+    background-color: #c4302b10 ;
+    border:1px solid #c4302b ;
+    color: #2f2f2f;
+}
+.movieWrapper .card a.btn-primary:hover{
+    background-color: #9120202f;
+    transition: background-color 0.5s;
+    color:#3a3a3a;
+}
+.movieWrapper .card h4{
+    color:#2e2e2e;
+    width: 100%;
+    position: relative;
+    font-size: 25px;
+    background: -webkit-linear-gradient(rgb(8, 8, 8), rgb(224, 141, 15));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* movie card END*/
+/* View More ... START */
+.detail-wrapper{
+    padding: 5px;
+    display: block;
+    overflow-x: hidden;
+}
+.detail-wrapper .top-wrapper{
+    border-radius: 4px;
+    color: rgb(71, 71, 71);
+}
+.detail-wrapper .top-wrapper .row{
+    padding: 2px 5px;
+}
+.detail-wrapper .top-wrapper .flim{
+    position: relative;
+    padding: 2px 5px;
+}
+.detail-wrapper .top-wrapper .detail{
+    position: relative;
+    padding: 2px 30px;
+}
+.detail-wrapper .top-wrapper .flim iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    margin: 2px 8px;
+}
+.detail-wrapper .top-wrapper .detail h1{
+    text-transform: capitalize;
+    color:#2e2e2e;
+    width: 100%;
+    position: relative;
+    background: -webkit-linear-gradient(rgb(8, 8, 8), rgb(224, 141, 15));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.detail-wrapper .top-wrapper .detail p{
+    font-style: italic;
+    font-weight: normal;
+}
+.detail-wrapper .top-wrapper .detail p span {
+    font-weight: bold;
+    font-style: normal;
+}
+.detail-wrapper .top-wrapper p.card-topic span.checked{
+    color: orange;
+}
+.detail-wrapper .top-wrapper p.back-home{
+    background-image: linear-gradient(to right, rgb(255, 94, 0),rgba(255,0,0,0));
+    margin: 5px auto auto auto;
+    padding: 3px 5px;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+}
+.detail-wrapper .top-wrapper p.back-home a{
+    color: #fff;
+    text-decoration: none;
+}
+.detail-wrapper .top-wrapper p.back-home a i{
+    margin: auto 10px;
+}
+.detail-wrapper .top-wrapper .book-now{
+    display: flex;
+    width: 100%;
+    margin: 5px 10px;
+    flex-direction: row;
+}
+.detail-wrapper .top-wrapper .show-time{
+    display: inline-block;
+    margin: 4px 4px;
+    top: 0px;
+}
+.detail-wrapper .top-wrapper .show-time p{
+    float: left;
+    color: rgb(78, 78, 78);
+    border: 2px solid rgb(95, 95, 95);
+    padding: 5px 5px;
+    width: fit-content;
+    margin: auto 8px;
+    font-weight: bold;
+}
+.detail-wrapper .top-wrapper .show-book{
+    display: inline-block;
+    margin: 4px 10px;
+}
+.detail-wrapper .top-wrapper .show-book form label{
+    font-weight: bold;
+    margin: 4px;
+}
+.detail-wrapper .top-wrapper .show-book form select{
+    border:1px solid #ff5e00;
+    padding: 5px 8px;
+}
+.detail-wrapper .top-wrapper .show-book form button{
+    background-color: #ff8800;
+    border:2px solid #ff5e00;
+    color: #fff;
+    border-radius: 0px;
+}
+.detail-wrapper .top-wrapper .show-book a:hover{
+    background-color: #ff88003f;
+    transition: background-color 0.5s;
+    color:#3a3a3a;
+}
+.detail-wrapper .rating-wrapper{
+    padding: 5px 15px;
+    margin: 4% auto 2% auto;
+    box-shadow: 0px 0px 3px #777575;
+    border-radius: 1px;
+    background-color: rgba(226, 226, 226, 0.897);
+}
+.detail-wrapper .rating-wrapper h4{
+    text-transform: capitalize;
+    width: fit-content;
+    border-bottom: 2px solid orange;
+}
+.detail-wrapper .rating-wrapper form{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: fit-content;
+}
+.detail-wrapper .rating-wrapper form p span{
+    cursor: pointer;
+}
+.detail-wrapper .rating-wrapper form p span:hover{
+    color: orange;
+}
+.detail-wrapper .rating-wrapper input{
+    display: none;
+}
+.detail-wrapper .rating-wrapper label{
+    font-weight: 500;
+    color: #797979;
+}
+.detail-wrapper .rating-wrapper textarea{
+    color: #444444;
+    padding: 0px 5px;
+}
+.detail-wrapper .rating-wrapper button{
+    padding: 4px 10px;
+    width: fit-content;
+    margin: 5px 0px;
+    border: none;
+    color: #fff;
+    background-color: rgb(58, 58, 58);
+    border-radius: 2px;
+}
+.detail-wrapper .show-rating{
+    margin: auto 2%;
+    display: block;
+}
+.detail-wrapper .show-rating h4{
+    color: #464646;
+    background-color: #ececec;
+    font-style: italic;
+    padding: 5px 10px;
+    width: fit-content;
+}
+.detail-wrapper .show-rating .split i{
+    color: #737b7e;
+    font-size: 50px;
+}
+.detail-wrapper .show-rating .split{
+    border-bottom: 1px solid #bfbfbf;
+    width: fit-content;
+    min-width: 20%;
+    margin: 5px 0px;
+}
+.detail-wrapper .show-rating .split span.checked{
+    color: orange;
+}
+.token-wrapper{
+    width:100%;
+    height: 100%;
+    display:block;
+    overflow-y: scroll;
+    position: fixed;
+    text-align: center;
+    z-index: 3;
+    top: 5vh;
+    background-color:rgba(0, 0, 0, 0.836);
+}
+.token-wrapper .token{
+    display: block;
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 2% 3%;
+    width: fit-content;
+    max-width: 800px;
+}
+.token-wrapper .token .border1{
+    border: 5px double rgb(212, 102, 69);
+   ;
+    border-style: double;
+    padding: 2% 2%;
+}
+.token-wrapper .token button{
+    float: right;
+}
+.token-wrapper .token .head{
+    margin-top: -10px;
+}
+.token-wrapper .token .b{
+    display: inline-block;
+    width: 100%;
+    margin:-10px auto ;
+}
+.token-wrapper .token .down-b{
+    display: inline-block;
+    width: 100%;
+    margin:3px 5px ;
+}
+.token-wrapper .token .down-b a{
+    display: inline-block;
+    margin:0px;
+    float: left;
+    background-color: rgb(98, 136, 101);
+    border: none;
+}
+.token-wrapper .token .head img{
+    text-align: center;
+    margin: 3px;
+}
+.token-wrapper .token .head p{
+    font-weight: normal;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 8%;
+    font-size: 22px;
+}
+.token-wrapper .token .head p span{
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.token-wrapper .token .head i{
+    font-weight: normal;
+    font-size: 15px;
+    color: rgb(134, 15, 15);
+}
+.token-wrapper .token .sign-wrapper {
+    display: inline-block;
+    width: 100%;
+    margin-top: 5%;
+}
+.token-wrapper .token .sign {
+    display: block;
+    float: right;
+    background-size: 160px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: fit-content;
+}
+.token-wrapper .token .sign p{
+    display: block;
+    position: absolute;
+    text-align: center;
+    margin: 0px 5%;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+}
+.token-wrapper .token .sign img{
+    max-height: 120px;
+}
+/* View More ... END */
+/* SEAT MANAGEMENT PAGE ____________ START */
+.booking-section-wrap{
+    margin: 5px 2px;
+    display: inline-block;
+}
+section.seat-section{
+    width: fit-content;
+    display:block;
+    margin-top: 0px;
+    float: left;
+}
+section#seat-select-wrap .seat-row {
+    display: flex;
+}
+section#seat-select-wrap{
+    width: fit-content;
+    margin: auto 50px 20px 20px;
+}
+section#seat-select-wrap .screenSide{
+    border-top-left-radius:100% 100%;
+    border-top-right-radius:100% 100%;
+    margin: 10px 5px;
+    background-image: linear-gradient(rgb(252, 114, 46), rgb(248, 230, 68));
+    padding: 10px 20px;
+    width: 100%;
+}
+section#seat-select-wrap .screenSide h4{
+    color: #fff;
+    text-align: center;
+}
+section#seat-select-wrap .seat-row button{
+    padding: 3px;
+    border-radius: 3px;
+    height: 30px;
+    min-width: 30px;
+    width: fit-content;
+    margin: 5px;
+    border: none;
+    font-size: 15px;
+}
+section#seat-select-wrap .seat-row button.Normal:hover{
+    background-image: linear-gradient(to bottom right, rgb(0, 115, 149), rgb(94, 181, 207));
+    color: #fff;
+}
+/* normal seat color */
+section#seat-select-wrap .seat-row button.Normal{
+    background-color: rgb(4, 168, 218);
+   /* background-image: linear-gradient(to bottom right, rgb(4, 168, 218), rgb(120, 221, 251));
+    */
+}
+/* Reserved seat color */
+section#seat-select-wrap .seat-row button.Reserved{
+    background-image: linear-gradient(to bottom right, rgb(218, 167, 0), rgb(238, 224, 164));
+}
+section#seat-select-wrap .seat-row button.Reserved:hover{
+    color: #fff;
+    background-image: linear-gradient(to bottom right, rgb(204, 158, 8), rgb(204, 188, 114));
+}
+/* Booked seat color */
+section#seat-select-wrap .seat-row button.Booked{
+    color: #fff;
+    background-image: linear-gradient(to bottom right, rgb(255, 0, 0), rgb(245, 122, 122));
+}
+section#seat-select-wrap .seat-row button.selected{
+    color: #fff;
+    background-image: linear-gradient(to bottom right, rgb(45, 155, 54), rgb(67, 172, 93));
+}
+section#seat-select-wrap .seat-row span{
+    margin: 5px 15px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+section#seat-select-wrap .seatInfo{
+    display: flex;
+    margin: 15px 5px;
+    border-top: 2px solid #5a5a5a;
+    padding: 5px;
+    width: 100%;
+}
+section#seat-select-wrap .seatInfo .reserved{
+    background :rgb(218, 167, 0);
+    height: 20px;
+    width: 20px;
+    margin: 3px 8px;
+}
+section#seat-select-wrap .seatInfo .booked{
+    background :rgb(255, 0, 0);
+    height: 20px;
+    width: 20px;
+    margin: 3px 8px;
+}
+section#seat-select-wrap .seatInfo .available{
+    background :rgb(4, 168, 218);
+    height: 20px;
+    width: 20px;
+    margin: 3px 8px;
+}
+section .billing{
+    background: url(../images/bill.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 2px;
+    margin-top: 2%;
+    min-width: 430px;
+}
+section .billing form{
+    border-radius: 2px;
+    display: table;
+}
+section form .bill{
+    padding: 10px;
+    color: #303030;
+    font-family: sans-serif;
+}
+section form .bill div{
+    display: flex;
+    flex-direction: row;
+}
+section form .bill div:last-child{
+   /* border-top: 2px double gold;
+    */
+    margin: 20% 0% auto auto;
+    padding: 10px 50px;
+    font-size: 20px;
+    text-align: center;
+}
+section form label{
+    font-weight: bold;
+    color: rgb(61, 61, 61);
+    display: inline-block;
+    margin-right: 5px;
+}
+section form input{
+    border: none;
+    background: none;
+}
+section form label p{
+    display: inline-block;
+}
+section .seat-button-wrapper{
+    margin-top: 5%;
+}
+section .seat-button-wrapper button{
+    border: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: rgb(24, 173, 37);
+    margin: auto 10px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+section .seat-button-wrapper a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 12px 20px;
+    width: 100%;
+    font-size: 20px;
+    border-radius: 20px;
+    background: linear-gradient(to right, rgb(12, 130, 209), rgba(0, 124, 128, 0.301));
+}
+section.seat-section #payment-button{
+    margin-top: -50px;
+    float: right;
+    border: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: rgb(24, 173, 37);
+    font-size: 20px;
+    border-radius: 20px;
+    color: #fff;
+}
+/* SEAT MANAGEMENT PAGE ____________ END */
+/* ABOUT/ PRIVACY /FAQ PAGE ____________ START */
+section#about-section{
+    padding: 10px;
+    margin: 5px;
+    display: block;
+}
+section .about-wrapper ,section .privacy-wrapper,section .faq-wrapper {
+    background-color: #e9e9e9;
+    border-radius: 2px;
+    padding: 5px 5%;
+}
+.about-wrapper h2, section .privacy-wrapper h2, ,section .faq-wrapper h2{
+    font-weight: bold;
+    color:#757474;
+}
+.about-wrapper p, section .privacy-wrapper p ,section .faq-wrapper p{
+    color: rgb(83, 83, 83);
+    flex: auto;
+    letter-spacing: 1px;
+    writing-mode: horizontal-tb;
+    word-spacing: 3px;
+}
+section .privacy-wrapper ul li{
+    list-style: none;
+    display: table;
+}
+section .privacy-wrapper ul p{
+    display: table-cell;
+    flex-direction: column;
+}
+section .faq-wrapper ul li{
+    list-style: none;
+    display: block;
+}
+section .privacy-wrapper ul p{
+    display: inline-block;
+}
+section .privacy-wrapper ul p.bullet::before{
+    content: '✓';
+    font-weight: bold;
+    background-color: #3cc54c;
+    padding: 3px;
+    border-radius: 2px;
+    margin: 0px 3px;
+    color: #fff;
+    width: fit-content;
+}
+section .faq-wrapper ul p.bullet::before{
+    content: '?';
+    font-weight: bold;
+    background-color: #b13b1d;
+    padding: 3px;
+    border-radius: 2px;
+    margin: 0px 3px;
+    color: #fff;
+    width: fit-content;
+}
+section .faq-wrapper ul p.bullet{
+    font-weight: bold;
+}
+/* ABOUT / PRIVACY /FAQ PAGE ____________ END */
+section#forum-section{
+    padding: 10px;
+    margin: 5px;
+    display: block;
+}
+section#forum-section .form-wrapper{
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+section#forum-section form {
+    width: fit-content;
+    margin: 2% auto;
+    max-width: 600px;
+    padding: 5px 10px;
+    display: block;
+    border-radius: 5px;
+    background-color: rgb(196, 196, 196);
+}
+section#forum-section form h4{
+    width: 100%;
+    text-align: center;
+    color: #ececec;
+    background-color: rgb(63, 63, 63);
+    border-radius: 5px;
+    padding: 10px;
+}
+section#forum-section form .input-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+section#forum-section form .input-wrapper input,section#forum-section form .input-wrapper textarea {
+    border: none;
+    border-radius: 2px;
+    padding: 4px 6px;
+    margin: 5px 8px;
+    background-color: rgb(247, 247, 247);
+    color: rgb(71, 71, 71);
+}
+section#forum-section form .input-wrapper label {
+    margin: 5px 8px;
+    color: rgb(71, 71, 71);
+    text-align: left;
+}
+section#forum-section form .button {
+    margin: 5px 8px;
+    width: 100%;
+    text-align: left;
+}
+section#forum-section form .button button {
+    margin: 5px 8px;
+    padding: 3px 6px;
+    border: none;
+    color: #fff;
+    background-color: rgb(63, 63, 63);
+    border-radius: 3px;
+}
+section#forum-section form .button button:hover {
+    background-color: rgb(39, 39, 39);
+}
+section#forum-section form .button a {
+    margin: 5px 8px;
+    padding: 5px 6px;
+    color: rgb(85, 85, 85);
+    background-color: rgb(218, 218, 218);
+    text-decoration: none;
+    border: 2px solid rgb(63, 63, 63);
+}
+/* footer ________________ START */
+footer{
+   /* background:linear-gradient(to bottom, #bfbfbf ,#a0a0a0, #747474,rgb(65, 63, 63)) */
+    background-color: rgb(29, 29, 29);
+    color: #fff;
+    padding: 5px 15px;
+}
+footer .row{
+}
+footer .row .col-md-3{
+    padding: 1% 3%;
+}
+footer .row ul li a{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    color: #fff;
+    text-transform: capitalize;
+    text-align: left;
+}
+footer .row ul li a:hover{
+    color:rgb(255, 94, 0);
+    text-decoration: none;
+    text-shadow: 1px 2px 4px rgb(0,0, 0);
+}
+footer .row ul{
+    list-style: none;
+    padding: 5px;
+    color:#fff;
+}
+footer .row ul p{
+    font-size: 22px;
+    font-weight: bold;
+}
+footer .row ul li{
+    margin: 5px;
+    text-align: left;
+}
+footer .row ul li a i{
+    margin-right: 5px;
+    padding: 5px;
+}
+@media screen and (max-width:950px){
+    footer{
+        padding: 5px 10px;
+   }
+    footer .row .col-md-3{
+        padding: 1% 1%;
+   }
+    footer .row ul li a{
+        font-size: 15px;
+   }
+    footer .row ul{
+        padding: 4px;
+   }
+    footer .row ul p{
+        font-size: 19px;
+   }
+    footer .row ul li{
+        margin: 3px;
+        text-align: left;
+   }
+    footer .row ul li a i{
+        margin-right: 3px;
+        padding: 3px;
+   }
+}
+@media screen and (max-width:750px){
+    footer{
+        padding: 5px 10px;
+   }
+    footer .row {
+        text-align: center;
+        display: inline-block;
+        margin: auto 2%;
+   }
+    footer .row .col-md-3{
+        padding: 1% 1%;
+        width: 200px;
+        float: left;
+        margin: 0px;
+        height: 200px;
+   }
+    footer .row ul li a{
+        font-size: 15px;
+   }
+    footer .row ul{
+        padding: 4px;
+        width: fit-content;
+        margin: 0 auto;
+        max-width: 200px;
+        max-width: 200px;
+   }
+    footer .row ul p{
+        font-size: 19px;
+   }
+    footer .row ul li{
+        margin: 3px;
+        text-align: left;
+   }
+    footer .row ul li a i{
+        margin-right: 3px;
+        padding: 3px;
+   }
+}
