@@ -1,2 +1,5 @@
 # FinalYearProject
 The purpose of this Online Movie Ticket Booking and Rating System is to automate the existing manual system by the help of computerized equipment and full-fledged computer software, fulfilling their requirements, so that their valuable data/information can be stored for a longer period with easily available and easy to work with.
+
+Online movie Ticket Booking system, as described above, can lead to error free, secure, reliable and faster management system. It can assist the user to concentrate on their other activities rather to concentrate on the records keeping. This it will help organization in better utilization of resources. The organization can maintain computerized records without redundant entries. That means one need not be distracted by information that is not relevant, while being able to reach the information.
+The aim is to automate it’s existing manual system by the help of computerized equipment and full-fledged computer software, fulfilling their requirements. Basically, the project describes how to manage for good performance and better services for the clients.
